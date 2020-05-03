@@ -112,8 +112,6 @@ if __name__ == "__main__":
     cmd += " --privileged -v /dev/bus/usb:/dev/bus/usb "  # allow usb access
     cmd += " --privileged -v /dev/hydra:/dev/hydra "  # allow razer hydra alias
 
-    cmd += " --rm "  # remove the image when you exit
-
     # allow setting chrt priority by regular user inside container???
     cmd += " --ulimit rtprio=30 "
 

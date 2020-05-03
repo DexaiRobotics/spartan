@@ -17,15 +17,9 @@
 [submodule "models/dish_models"]
 	path = models/dish_models
 	url = https://github.com/gizatt/dish_models
-[submodule "src/handical"]
-	path = src/handical
-	url = git@github.com:RobotLocomotion/handical.git
 [submodule "src/tsdf-fusion"]
 	path = src/tsdf-fusion
 	url = git@github.com:RobotLocomotion/tsdf-fusion.git
-[submodule "src/catkin_projects/iiwa_driver"]
-	path = src/catkin_projects/iiwa_driver
-	url = git@github.com:RobotLocomotion/iiwa_driver.git
 [submodule "src/catkin_projects/wsg50-ros-pkg"]
 	path = src/catkin_projects/wsg50-ros-pkg
 	url = git@github.com:RobotLocomotion/wsg50-ros-pkg
