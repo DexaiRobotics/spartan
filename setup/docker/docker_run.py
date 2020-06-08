@@ -51,7 +51,7 @@ if __name__ == "__main__":
     if args.no_nvidia:
         cmd += "docker run "
     else:
-        cmd += "nvidia-docker run "
+        cmd += "docker run --gpus all "
     if args.container:
         cmd += " --name %(container_name)s " % {'container_name': args.container}
 
@@ -59,6 +59,7 @@ if __name__ == "__main__":
     cmd += " -v %(source_dir)s:%(home_directory)s/spartan " \
            % {'source_dir': source_dir, 'home_directory': home_directory}  # mount source
     cmd += " -v ~/fullstack/src/log_robot:%(home_directory)s/log_robot " % {'home_directory': home_directory}  # mount log data
+    cmd += " -v ~/fullstack/src:/src"  # mount src directory
     cmd += " -v ~/.ssh:%(home_directory)s/.ssh " % {'home_directory': home_directory}  # mount ssh keys
 
     # Make Bazel artifact dir if it doesn't exist
