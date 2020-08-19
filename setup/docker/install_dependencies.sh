@@ -35,4 +35,5 @@ pip install \
   scipy \
   pyassimp \
   pyglet \
+  tqdm
 
